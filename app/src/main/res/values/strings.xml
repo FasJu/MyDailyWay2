@@ -1,14 +1,22 @@
 <resources>
-    <string name="app_name">Wegetagebuch</string>
+    <string name="app_name">MyDailyWay</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
-    <string name="action_settings">Settings</string>
-    <string name="nav_tv_1">Bearbeitet von:</string>
-    <string name="nav_tv_2">Po. Tato</string>
-    <string name="nav_tv_3">Pi. Neapple</string>
-    <string name="title_activity_maps">Map</string>
+
+
+    <string name="title_activity_start">StartActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="nav_calendar">Kalender</string>
+    <string name="nav_favorites">Favoriten</string>
+    <string name="nav_share">Share</string>
+    <string name="nav_changeProfile">Profil wechseln</string>
+    <string name="nav_trackList">Tracks</string>
+    <string name="nav_infos">Hilfe und Einstellungen</string>
+    <string name="nav_impressum">Impressum</string>
+    <string name="nav_mail">contact@mydailyway.com</string>
 
     <string name="gpsConfirmation_message"> GPS ist nicht aktiviert. Um alle Funktionen dieser Anwendung nutzen zu können, müssen Sie GPS aktivieren. Wollen Sie zu den Einstellungen weitergeleitet werden?</string>
     <string name="gpsConfirmation_yes">Ja</string>

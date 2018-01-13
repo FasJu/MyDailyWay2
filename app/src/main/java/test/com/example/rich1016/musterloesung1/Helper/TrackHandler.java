@@ -36,7 +36,7 @@ public class TrackHandler {
         mLocationList.add(location);
         double lat;
         double lon;
-        PolylineOptions options = new PolylineOptions().width(12).color(Color.CYAN);
+        PolylineOptions options = new PolylineOptions().width(12).color(Color.BLUE);
         for (int i = 0; i < mLocationList.size(); i++) {
             Location tempLocation = mLocationList.get(i);
 

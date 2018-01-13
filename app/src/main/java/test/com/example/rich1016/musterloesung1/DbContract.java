@@ -17,6 +17,8 @@ public class DbContract {
         public static final String COLUMN_NAME_DURATION = "location_duration";
         public static final String COLUMN_NAME_TRAFFIC = "location_traffic";
         public static final String COLUMN_NAME_NAME = "location_name";
+        public static final String COLUMN_NAME_LAT = "location_latitude";
+        public static final String COLUMN_NAME_LONG = "location_longitude";
 
 
 
@@ -28,5 +30,7 @@ public class DbContract {
                     LocationTable.COLUMN_NAME_DATE + " Text," +
                     LocationTable.COLUMN_NAME_DURATION + " Text," +
                     LocationTable.COLUMN_NAME_TRAFFIC + " Text," +
-                    LocationTable.COLUMN_NAME_NAME + " Text)";
+                    LocationTable.COLUMN_NAME_NAME + " Text" +
+                    LocationTable.COLUMN_NAME_LAT + " Text" +
+                    LocationTable.COLUMN_NAME_LONG + " Text)";
 }
