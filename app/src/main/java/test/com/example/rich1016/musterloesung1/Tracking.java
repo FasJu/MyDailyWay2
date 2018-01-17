@@ -2,11 +2,17 @@ package test.com.example.rich1016.musterloesung1;
 
 
 
-public class Location {
+public class Tracking {
 
+
+    public Tracking() {
+
+    }
     public String date;
 
     public void setDate(String date) {
+
+
         this.date = date;
     }
 

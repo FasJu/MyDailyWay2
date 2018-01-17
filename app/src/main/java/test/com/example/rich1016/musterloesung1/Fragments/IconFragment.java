@@ -50,14 +50,7 @@ public class IconFragment extends DialogFragment implements View.OnClickListener
         view = inflater.inflate(R.layout.icon_fragment, container, false);
         ImageButton buttonBus = (ImageButton) view.findViewById(R.id.button_bus);
         buttonBus.setOnClickListener(this);
-        ImageButton buttonFahrrad = (ImageButton) view.findViewById(R.id.button_fahrrad);
-        buttonFahrrad.setOnClickListener(this);
-        ImageButton buttonTram = (ImageButton) view.findViewById(R.id.button_tram);
-        buttonTram.setOnClickListener(this);
-        ImageButton buttonGehen = (ImageButton) view.findViewById(R.id.button_gehen);
-        buttonGehen.setOnClickListener(this);
-        ImageButton buttonAuto = (ImageButton) view.findViewById(R.id.button_auto);
-        buttonAuto.setOnClickListener(this);
+
 
         view.setBottom(5);
 
@@ -93,22 +86,6 @@ public class IconFragment extends DialogFragment implements View.OnClickListener
 
         switch (v.getId()){
             case R.id.button_bus:
-                mListener.onFragmentInteraction(v.getBackground());
-                dismiss();
-                break;
-            case R.id.button_auto:
-                mListener.onFragmentInteraction(v.getBackground());
-                dismiss();
-                break;
-            case R.id.button_fahrrad:
-                mListener.onFragmentInteraction(v.getBackground());
-                dismiss();
-                break;
-            case R.id.button_gehen:
-                mListener.onFragmentInteraction(v.getBackground());
-                dismiss();
-                break;
-            case R.id.button_tram:
                 mListener.onFragmentInteraction(v.getBackground());
                 dismiss();
                 break;

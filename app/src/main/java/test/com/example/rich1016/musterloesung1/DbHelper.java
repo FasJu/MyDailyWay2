@@ -36,8 +36,10 @@ public class DbHelper extends SQLiteOpenHelper {
         return DbHelper.instance;
     }
 
+
+
     //?????????????????location oder Tracking ??????????????????
-    public void saveTracking(Location location){
+    public void saveTracking(Tracking location){
 
         SQLiteDatabase db = this.getWritableDatabase();
 
@@ -69,6 +71,7 @@ public class DbHelper extends SQLiteOpenHelper {
             do {
                 //cursor zeigt auf einen Eintrag in der Ergebnisliste
 
+
                 String date = cursor.getString(cursor.getColumnIndex(DbContract.LocationTable.COLUMN_NAME_DATE));
                 String duration = cursor.getString(cursor.getColumnIndex(DbContract.LocationTable.COLUMN_NAME_DURATION));
                 String traffic = cursor.getString(cursor.getColumnIndex(DbContract.LocationTable.COLUMN_NAME_TRAFFIC));
@@ -77,14 +80,17 @@ public class DbHelper extends SQLiteOpenHelper {
                 String longitude = cursor.getString(cursor.getColumnIndex(DbContract.LocationTable.COLUMN_NAME_LONG));
 
 
-                Location location = new Location();
+                double lat = Double.parseDouble(latitude);
+                double lon = Double.parseDouble(longitude);
+
+
+                Tracking location = new Tracking();
 
                 location.setDate(date);
                 location.setDuration(duration);
                 location.setTraffic(traffic);
                 location.setName(name);
-                location.setLatitude(latitude);
-                location.setLongitude(longitude);
+
 
 
                 LocationData.getInstance().save(location);

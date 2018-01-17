@@ -26,8 +26,8 @@ public class LocationData {
         return LocationData.instance;
     }
 
-    public void save(Location location){
-        locationList.add(location);
+    public void save(Tracking location){
+   //     locationList.add(location);
     }
 
     public List<Location> getUserList() {

@@ -140,8 +140,7 @@
         app:layout_constraintBottom_toTopOf="@+id/button_close_choose_traffic"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/ic_action_people"
-        tools:ignore="VectorDrawableCompat"
-        android:layout_marginLeft="15dp" />
+        tools:ignore="VectorDrawableCompat" />
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/button_bike"
@@ -210,7 +209,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar"
         app:layout_constraintVertical_bias="1.0"
-        tools:context="de.info3.lima1035.mydailyway.MapsActivity" />
+        tools:context="test.com.example.rich1016.musterloesung1.MainActivity"
+         />
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline"

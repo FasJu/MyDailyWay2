@@ -65,6 +65,7 @@ public class MainActivity extends AppCompatActivity
     private LocationCallback mLocationCallback;
     private boolean mRequestingLocationUpdates;
     private boolean mTracking = false;
+    private boolean track = true;
     private TrackHandler mTrackHandler;
     FloatingActionButton buttonModeIcon;
 
@@ -344,7 +345,7 @@ public class MainActivity extends AppCompatActivity
 
             SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                     .findFragmentById(R.id.map);
-            mapFragment.getMapAsync(this);
+            mapFragment.getMapAsync(MainActivity.this);
         } else {
             finish();
 
